@@ -10,4 +10,27 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+## Docker and Docker Compose
+You must install Docker and Docker compose on your machine.
+
+To verify a successful instalation, run:
+
+```sh
+# Verify Docker
+docker -v
+
+# Verify Docker Compose
+docker-compose -v
+```
+
+## Run local containers
+On your terminal, go to this repository root and run containers: `docker-compose up`
+
+## Verify API is running
+
+* API health check: http://localhost:3000/api/ping 
+
+## Verify Web App is running and register user
+The registered user is created on your local database.
+
+* Web App user registration: http://localhost:3001/register
